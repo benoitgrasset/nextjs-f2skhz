@@ -1,14 +1,30 @@
 import React from 'react';
-import { deleteMessage, getMessages } from '/src/services';
+import { deleteMessage, getMessages, postMessage } from '/src/services';
 import styles from '../styles/Home.module.css';
 
+const getTimeStamp = () => Date.now() / 1000;
+
+const loggedUserId = 1;
 const conversationId = 1;
 
 export default function Home() {
   const [messages, setMessages] = React.useState([]);
 
-  const handleDelete = (messageId) => {
+  const handleDeleteMessage = (messageId) => {
     deleteMessage(messageId).then((res) => fetchMessages(conversationId));
+  };
+
+  const handleCreateMessage = () => {
+    const body = {
+      body: 'test',
+      conversationId,
+      authorId: loggedUserId,
+      timestamp: getTimeStamp(),
+      id: null,
+    };
+    postMessage(conversationId, body).then((res) =>
+      fetchMessages(conversationId)
+    );
   };
 
   const fetchMessages = (conversationId) => {
@@ -21,12 +37,15 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <button className={styles.button} onClick={handleCreateMessage}>
+        Create
+      </button>
       {messages.map((message) => (
         <div className={styles.card} key={message.id}>
           {message.body}
           <button
             className={styles.button}
-            onClick={() => handleDelete(message.id)}
+            onClick={() => handleDeleteMessage(message.id)}
           >
             Delete
           </button>

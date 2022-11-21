@@ -62,32 +62,11 @@
       "body": "Bonjour c'est le n message de la première conversation"
     },
     {
-      "id": 6,
-      "conversationId": 1,
-      "timestamp": 1625648667,
-      "authorId": 2,
-      "body": "Bonjour c'est le n message de la première conversation"
-    },
-    {
-      "id": 7,
-      "conversationId": 1,
-      "timestamp": 1625648667,
-      "authorId": 2,
-      "body": "Bonjour c'est le n message de la première conversation"
-    },
-    {
       "id": 4,
       "conversationId": 2,
       "timestamp": 1620284667,
       "authorId": 2,
       "body": "Bonjour c'est le premier message de la seconde conversation"
-    },
-    {
-      "body": "test",
-      "id": 9,
-      "conversationId": 1,
-      "authorId": 1,
-      "timestamp": 1665435773.577
     }
   ],
   "users": [
