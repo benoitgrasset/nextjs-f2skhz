@@ -13,6 +13,21 @@ export const getMessages = async (conversationId) => {
   return messages;
 };
 
+export const postMessage = async (conversationId, body) => {
+  await fetch(baseUrl + `messages/${conversationId}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(body),
+  }).catch((err) =>
+    console.error(
+      `Error posting message from conversation ${conversationId}`,
+      err
+    )
+  );
+};
+
 export const deleteMessage = async (messageId) => {
   await fetch(baseUrl + `message/${messageId}`, {
     method: 'DELETE',
