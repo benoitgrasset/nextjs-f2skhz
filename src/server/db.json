@@ -1,0 +1,115 @@
+{
+  "conversations": [
+    {
+      "id": 1,
+      "recipientId": 2,
+      "recipientNickname": "Jeremie",
+      "senderId": 1,
+      "senderNickname": "Thibaut",
+      "lastMessageTimestamp": 1625637849
+    },
+    {
+      "id": 2,
+      "recipientId": 3,
+      "recipientNickname": "Patrick",
+      "senderId": 1,
+      "senderNickname": "Thibaut",
+      "lastMessageTimestamp": 1620284667
+    },
+    {
+      "id": 3,
+      "recipientId": 1,
+      "recipientNickname": "Thibaut",
+      "senderId": 4,
+      "senderNickname": "Elodie",
+      "lastMessageTimestamp": 1625648667
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "conversationId": 1,
+      "timestamp": 1625637849,
+      "authorId": 1,
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 2,
+      "conversationId": 1,
+      "timestamp": 1625637867,
+      "authorId": 1,
+      "body": "Bonjour c'est le second message de la première conversation"
+    },
+    {
+      "id": 3,
+      "conversationId": 1,
+      "timestamp": 1625648667,
+      "authorId": 2,
+      "body": "Bonjour c'est le troisième message de la première conversation"
+    },
+    {
+      "id": 4,
+      "conversationId": 1,
+      "timestamp": 1625648667,
+      "authorId": 2,
+      "body": "Bonjour c'est le n message de la première conversation"
+    },
+    {
+      "id": 5,
+      "conversationId": 1,
+      "timestamp": 1625648667,
+      "authorId": 2,
+      "body": "Bonjour c'est le n message de la première conversation"
+    },
+    {
+      "id": 6,
+      "conversationId": 1,
+      "timestamp": 1625648667,
+      "authorId": 2,
+      "body": "Bonjour c'est le n message de la première conversation"
+    },
+    {
+      "id": 7,
+      "conversationId": 1,
+      "timestamp": 1625648667,
+      "authorId": 2,
+      "body": "Bonjour c'est le n message de la première conversation"
+    },
+    {
+      "id": 4,
+      "conversationId": 2,
+      "timestamp": 1620284667,
+      "authorId": 2,
+      "body": "Bonjour c'est le premier message de la seconde conversation"
+    },
+    {
+      "body": "test",
+      "id": 9,
+      "conversationId": 1,
+      "authorId": 1,
+      "timestamp": 1665435773.577
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nickname": "Thibaut",
+      "token": "xxxx"
+    },
+    {
+      "id": 2,
+      "nickname": "Jeremie",
+      "token": "xxxx"
+    },
+    {
+      "id": 3,
+      "nickname": "Patrick",
+      "token": "xxxx"
+    },
+    {
+      "id": 4,
+      "nickname": "Elodie",
+      "token": "xxxx"
+    }
+  ]
+}
